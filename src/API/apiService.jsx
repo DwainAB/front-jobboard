@@ -1,14 +1,7 @@
 const BASE_URL = "https://test-subskill.000webhostapp.com/test-subskill/index.php/api";
 
 export const apiService = {
-    getRandomImg: async () => {
-        try {
-            const response = await fetch(`https://some-random-api.ml/meme/`);
-            return await response.json();
-        } catch (error) {
-            throw error;
-        }
-    },
+
 
     getJobs: async () => {
         try {
@@ -78,7 +71,7 @@ export const apiService = {
     logout: async () => {
         try {
             const response = await fetch(`${BASE_URL}/user/logout`, {
-                method: 'POST', // ou GET selon ce que vous avez configuré côté serveur
+                method: 'POST', 
                 headers: {
                     'Content-Type': 'application/json'
                 },
@@ -93,7 +86,7 @@ export const apiService = {
     deleteJob: async (id) => {
         try {
             const response = await fetch(`${BASE_URL}/jobs/delete/${id}`, {
-                method: "DELETE"
+                method: "POST"
             });
             return await response.json();
         } catch (error) {
