@@ -350,6 +350,7 @@ function Carte() {
                             <img className="image-carte" src={data.image_url} alt="" />
                             <div className="shadow-carte">
                                 <h2 className="titre-carte info-job">{data.title_job}</h2>
+                                <h2 className="info-job">{data.company_name}</h2>
                                 <p className='info-job'>{data.location}</p>
                                 <p className='info-job'>ref: {data.reference}</p>
                                 <p className='info-job'>{reverseDate(data.publication_date)}</p>
