@@ -1,4 +1,4 @@
-const BASE_URL = "http://localhost:3307/test-subskill/index.php/api";
+const BASE_URL = "https://test-subskill.000webhostapp.com/test-subskill/index.php/api";
 
 export const apiService = {
     getRandomImg: async () => {
