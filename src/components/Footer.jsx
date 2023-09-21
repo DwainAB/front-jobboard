@@ -8,7 +8,7 @@ function Footer(){
             <Link to="/">
             <h1 className="navbar-img">TechJob</h1>
             </Link>
-            <p className="text-footer">© 2021 TechJob. Tous droits réservés</p>
+            <p className="text-footer">© 2023 TechJob. Tous droits réservés</p>
         </div>
     )
 }
