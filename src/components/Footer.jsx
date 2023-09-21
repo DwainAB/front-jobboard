@@ -7,9 +7,9 @@ function Footer(){
     return(
         <div className="footer">
             <Link to="/">
-                <img src={LogoFooter} alt="Logo Kasa" />
+            <h1 className="navbar-img">TechJob</h1>
             </Link>
-            <p className="text-footer">© 2021 Kasa. Tous droits réservés</p>
+            <p className="text-footer">© 2021 TechJob. Tous droits réservés</p>
         </div>
     )
 }
