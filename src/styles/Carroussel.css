@@ -1,0 +1,47 @@
+.carrousselbox{
+ position: relative;
+ margin-top: 50px;
+}
+
+.imagecarroussel{
+ width: 100%;
+ height: 25.938rem;
+ object-fit: cover;
+ border-radius: 1.5625rem;
+}
+
+.carrousselnav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+
+.fleche{
+    font-size: 5rem;
+    cursor: pointer;
+    text-shadow: 0 0 2px #000;
+    color: #fff;
+    margin: 1.5rem;
+}
+
+@media screen and (max-width : 650px){
+
+    .fleche{
+        width: 1rem;
+    }
+
+
+    .imagecarroussel{
+        border-radius: .625rem;
+        height: 13.983rem;
+    }
+
+    .fleche{
+        font-size: 1.5rem;
+    }
+}

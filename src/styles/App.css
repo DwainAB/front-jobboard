@@ -1,0 +1,9 @@
+.global{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.app{
+    margin-top: 40px;
+    font-family: 'Montserrat', sans-serif;
+}

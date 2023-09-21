@@ -1,0 +1,39 @@
+.erreur404{
+    text-align: center;
+    color: #ff6060;
+}
+
+.erreur404-lien{
+    color: #ff6060;
+    display: inline-block;
+    font-size: 1.125rem;
+    text-decoration: underline;
+    margin: 8rem 0;
+}
+
+.erreur404-lien:visited{
+    color: #ff6060;
+}
+
+.erreur404-code{
+    font-size: 18rem;
+    font-weight: 700;
+    margin: 8rem 0 4rem;
+}
+
+@media  screen and (max-width: 650px){
+    .erreur404-lien{
+        font-size: .875rem;
+        margin: 4rem 0;
+    }
+
+    .erreur404-code{
+        font-size: 6rem;
+        margin: 8rem 0 1rem;
+    }
+
+    .erreur404-texte{
+        font-size: 1.125rem;
+    }
+}
+
