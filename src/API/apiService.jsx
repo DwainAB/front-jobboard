@@ -71,16 +71,23 @@ export const apiService = {
     logout: async () => {
         try {
             const response = await fetch(`${BASE_URL}/user/logout`, {
-                method: 'POST', 
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-            });
-            return await response.json();
-        } catch (error) {
-            console.error('Erreur lors de la déconnexion:', error);
-            throw error;
-        }
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(vos-donnees),
+    });
+
+    if (!response.ok) {
+        throw new Error('La requête a échoué');
+    }
+
+    const data = await response.json();
+    // Traiter les données
+} catch (error) {
+    console.error('Erreur lors de la connexion :', error);
+}
+
     },
 
     deleteJob: async (id) => {
